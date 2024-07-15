@@ -38,7 +38,7 @@ services:
 
 Выполняю `docker compose up -d`
 
-![alt text](https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up.png?raw=true)
+![alt text](https://github.com/Granit16/NeedHelp001/blob/main/docker_compose_up_-d.png)
 
 контейнер shvirtd-example-python-mysql-1 живет, а shvirtd-example-python-mypython-1 отлетает, в логах сообщение об ошибке подключения:
 ```
