@@ -1,7 +1,7 @@
 # NeedHelp001
 Добрый день!
 
-Создал image используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python):
+Создал image "mypython:1.0.0", используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python):
 
 ```
 FROM python:3.9-slim
@@ -37,7 +37,7 @@ services:
 ```
 
 Выполняю `docker compose up -d`
-https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up%20-d.png?raw=true
+(https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up%20-d.png?raw=true)
 контейнер shvirtd-example-python-mysql-1 живет, а shvirtd-example-python-mypython-1 отлетает, в логах сообщение об ошибке подключения:
 
 `Traceback (most recent call last):
@@ -60,4 +60,4 @@ Traceback (most recent call last):
     raise get_mysql_exception(
 mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'mysql:3306' (111)`
 
-https://github.com/Granit16/NeedHelp001/blob/main/docker%20logs%20shvirtd-example-python-mypython-1.png?raw=true
+(https://github.com/Granit16/NeedHelp001/blob/main/docker%20logs%20shvirtd-example-python-mypython-1.png?raw=true)
