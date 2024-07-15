@@ -2,10 +2,10 @@
 Добрый день!
 
 Создал image используя файл Dockerfile.python:
- https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python
+`https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python`
 
 Создал compose.yaml:
- https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml
+`https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml`
 
 Выполняю docker compose up -d
 контейнер shvirtd-example-python-mysql-1 живет, а shvirtd-example-python-mypython-1 отлетает, в логах сообщение об ошибке подключения:
