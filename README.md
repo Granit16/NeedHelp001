@@ -1,13 +1,9 @@
 # NeedHelp001
 Добрый день!
 
-Создал image используя файл Dockerfile.python:
+Создал image используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python)
 
-`https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python`
-
-Создал compose.yaml:
-
-`https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml`
+Создал [compose.yaml](https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml)
 
 Выполняю `docker compose up -d`
 https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up%20-d.png?raw=true
