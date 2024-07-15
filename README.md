@@ -63,4 +63,4 @@ Traceback (most recent call last):
 mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'mysql:3306' (111)
 ```
 
-![alt text](https://github.com/Granit16/NeedHelp001/blob/main/docker_logs_shvirtd-example-python-mypython-1.png?raw=true)
+![alt text](https://raw.githubusercontent.com/Granit16/NeedHelp001/main/docker_logs_shvirtd-example-python-mypython-1.png?raw=true)
