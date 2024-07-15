@@ -3,7 +3,7 @@
 
 Создал image используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python):
 
-`FROM python:3.9-slim
+```FROM python:3.9-slim
 
 WORKDIR /app
 
@@ -21,12 +21,12 @@ ENV DB_NAME=example
 
 ENV DB_TABLE_NAME=table
 
-CMD ["python", "main.py"]`
+CMD ["python", "main.py"]```
 
 
 Создал [compose.yaml](https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml):
 
-`version: "3"
+```version: "3"
 
 services:
 
@@ -50,7 +50,7 @@ services:
     
     ports:
     
-      - 5000:5000`
+      - 5000:5000```
 
 Выполняю `docker compose up -d`
 https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up%20-d.png?raw=true
