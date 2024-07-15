@@ -3,7 +3,8 @@
 
 Создал image используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python):
 
-```FROM python:3.9-slim
+```
+FROM python:3.9-slim
 WORKDIR /app
 COPY requirements.txt main.py .
 RUN pip install -r requirements.txt
@@ -12,36 +13,28 @@ ENV DB_USER=root
 ENV DB_PASSWORD=very_strong
 ENV DB_NAME=example
 ENV DB_TABLE_NAME=table
-CMD ["python", "main.py"]```
+CMD ["python", "main.py"]
+```
 
 
 Создал [compose.yaml](https://github.com/Granit16/NeedHelp001/blob/main/compose.yaml):
 
-```version: "3"
-
+```
+version: "3"
 services:
 
-
   mysql:
-  
     image: mysql:8
-    
     environment:
-    
       - MYSQL_ROOT_PASSWORD=very_strong
-      
     ports:
-    
       - 3306:3306
-      
 
   mypython:
-  
     image: mypython:1.0.0
-    
     ports:
-    
-      - 5000:5000```
+      - 5000:5000
+```
 
 Выполняю `docker compose up -d`
 https://github.com/Granit16/NeedHelp001/blob/main/docker%20compose%20up%20-d.png?raw=true
