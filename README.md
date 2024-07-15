@@ -4,23 +4,14 @@
 Создал image используя файл [Dockerfile.python](https://github.com/Granit16/NeedHelp001/blob/main/Dockerfile.python):
 
 ```FROM python:3.9-slim
-
 WORKDIR /app
-
 COPY requirements.txt main.py .
-
 RUN pip install -r requirements.txt
-
 ENV DB_HOST=mysql
-
 ENV DB_USER=root
-
 ENV DB_PASSWORD=very_strong
-
 ENV DB_NAME=example
-
 ENV DB_TABLE_NAME=table
-
 CMD ["python", "main.py"]```
 
 
